@@ -2,7 +2,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Given an image, this page will display a text version using braille as 1-bit pixels">
-	<title>Image to Braille</title>
+	<title>图片转矩阵</title>
 	<link rel="stylesheet" href="style.css">
 	<script src="braille.js"></script>
 	<script src="dithering.js"></script>
@@ -14,10 +14,10 @@
 		<div><a href="https://github.com/505e06b2/Image-to-Braille" target="_blank">Open Repo</a></div>
 		<div><input id="file" type="file" accept="image/*"></div>
 
-		<div title="Toggle dark theme"><input type="checkbox" id="darktheme"> Dark Theme</div>
-		<div title="Invert black with white"><input type="checkbox" id="inverted"> Invert</div>
-		<div title="Monochrome dithering"><input type="checkbox" id="dithering"> Dithering</div>
-		<div title="Disable placeholder spacing"><input type="checkbox" id="monospace"> Monospace</div>
+		<div title="Toggle dark theme"><input type="checkbox" id="darktheme"> 深色模式</div>
+		<div title="Invert black with white"><input type="checkbox" id="inverted"> 转化</div>
+		<div title="Monochrome dithering"><input type="checkbox" id="dithering"> 抖动</div>
+		<div title="Disable placeholder spacing"><input type="checkbox" id="monospace"> 字体等宽</div>
 		<div title="Greyscale Mode">
 			<select id="greyscale_mode">
 				<option value="luminance">Luminance</option>
@@ -31,7 +31,7 @@
 			Width (characters)
 		</div>
 		<div>
-			<button id="clipboard">Copy to clipboard</button>
+			<button id="clipboard">复制</button>
 		</div>
 		<div>
 			Character Count: <span id="charcount">0</span>
